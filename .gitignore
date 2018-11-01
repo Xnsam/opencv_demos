@@ -1,0 +1,7 @@
+deep-*/
+__pycache__/
+*.zip
+blob-*/
+imgs/
+output/
+document-scanner/
