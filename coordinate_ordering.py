@@ -84,3 +84,27 @@ for (i, c) in enumerate(cnts):
     cv2.putText(image, "object # {}".format(i + 1), (int(rect[0][0] - 15), int(rect[0][1] - 15)), cv2.FONT_HERSHEY_SIMPLEX, 0.55, (255, 255, 255), 2)
 
 cv2.imwrite('output/contoured.png', image)
+
+
+def sort_array(x):
+    for i in range(0, len(x)):
+        for j in range(i + 1, len(x)):
+            if x[j] < x[i]:
+                tmp = x[i]
+                x[i] = x[j]
+                x[j] = tmp
+
+sort_array([2,4,6,8,3])
+
+
+def insertion_sort(n, arr):
+    num = arr[-1]
+    for i in range(n-2, -1, -1):
+        if arr[i] > num:
+            arr[i+1] = arr[i]
+            print(' '.join(str(j) for j in arr))
+        else:
+            arr[i+1] = num
+            print(' '.join(str(j) for j in arr))
+        arr[0] = num
+        print(' '.join(str(j) for j in arr))
