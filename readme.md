@@ -4,3 +4,5 @@ Opencv demos
 2. Image classification using opencv dnn
 3. Four point perspective transform
 4. document scanner
+5. Face landmark detection
+6. Measure object
