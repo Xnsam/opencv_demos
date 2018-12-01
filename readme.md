@@ -6,3 +6,5 @@ Opencv demos
 4. document scanner
 5. Face landmark detection
 6. Measure object
+7. Template Matching
+8. Color Contrasting
